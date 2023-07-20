@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.table-container{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px;
+    mat-form-field{
+        width: 100%;
+    }
+}
+body{
+    background-image: url('./imgs/clock-tower-1-1024x575.jpg');
+    background-size: cover;
+}

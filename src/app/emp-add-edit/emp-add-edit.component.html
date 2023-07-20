@@ -1,0 +1,72 @@
+<!-- FacultyId
+FirstName
+LastName
+email
+dob
+doj
+designation
+qualification -->
+
+<div mat-dialog-title>
+    <h1>Faculty Form</h1>
+</div>
+<form [formGroup]="fmsForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input matInput type="text" placeholder="First name" formControlName="FirstName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="text" placeholder="LAst name" formControlName="LastName">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-radio-group aria-label="Select an option" formControlName="gender">
+            <mat-label>Gender</mat-label>
+            <mat-radio-button value="M">Male</mat-radio-button>
+            <mat-radio-button value="F">Female</mat-radio-button>
+        </mat-radio-group>
+        </div>
+        <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>email</mat-label>
+            <input matInput type="text" placeholder="email"formControlName="email">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>qualification</mat-label>
+            <input matInput type="text" placeholder="qualification"formControlName="qualification">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>designation</mat-label>
+            <input matInput type="text" placeholder="designation"formControlName="designation">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>DOB</mat-label>
+            <input matInput [matDatepicker]="picker"formControlName="dob">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>DOJ</mat-label>
+            <input matInput [matDatepicker]="pick"formControlName="doj">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="pick"></mat-datepicker-toggle>
+            <mat-datepicker #pick></mat-datepicker>
+        </mat-form-field>
+    </div>
+        
+</div>
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button mat-dialog-close="False">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+</div>
+
+</form>

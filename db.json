@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "FirstName": "Parthiban",
+      "LastName": "D",
+      "gender": "M",
+      "email": "parthiban.d1207@gmail.com",
+      "dob": "2023-07-12T18:30:00.000Z",
+      "doj": "2023-07-17T18:30:00.000Z",
+      "designation": "professor",
+      "qualification": "BE",
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": []
+}
